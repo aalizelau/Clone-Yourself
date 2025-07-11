@@ -72,21 +72,17 @@ gcloud run deploy $SERVICE_NAME \
 ## Common Issues 
 - **Why does the model output random text even before training?**
   - Make sure you follow the required chat format. For example, Qwen-7B uses ChatML-style prompting, which looks like:  
-
     ```
     <|im_start|>user
     Hello!<|im_end|>
     <|im_start|>assistant
     Hi there!<|im_end|>
     ```
-- **How much data do I need?**
-  - In general, more is better. I tested with 500 rows vs. 1800 rows, and the larger dataset produced noticeably better results.
- 
+- **How much data do I need?**  
+    - In general, more is better. I tested with 500 rows vs. 1800 rows, and the larger dataset produced noticeably better results.
 - **The model keeps repeating itself at the end — why?**
   - This often happens if you set the EOS token as the pad token. Don’t do that — otherwise, the model won’t learn when to stop generating output.
-
 - **Does completion-only training improve the model’s response quality?**
    - It might help slightly, but in my experience, the impact was minimal.
-
-- **Privacy Concerns**
+- **Will the model leak my personal information in chat?**
   - The model only learns your style and tone — not factual personal info like your birthday, address, or job. If asked, it will just hallucinate an answer.
