@@ -1,11 +1,14 @@
 # 👯 Clone Yourself with WhatsApp Chat History
 This project allows you to clone your conversational style using your own WhatsApp chat history. Fine-tune a language model to mimic your tone, habits, and quirks.
 
-## Demo 
-to be added. 
-
 ## Model Link 
 [![Open in Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-model-blue)](https://huggingface.co/aalize/Qwen2.5-7B-Instruct-AWQ-4bit)
+
+## Demo 
+> Since the model was trained on my personal chat history (in Chinese), the demo below features a Chinese conversation.
+
+  <img width="250" alt="IMG_2996" src="https://github.com/user-attachments/assets/be3eedda-5e6e-409c-90ee-c26c82b9d065" />
+ <img width="250" alt="IMG_2996" src="https://github.com/user-attachments/assets/382734b7-0057-4643-8565-32c7054ad4f8" />
 
 ## Quick Start
 1. **Export Chat History**  
